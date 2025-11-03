@@ -1,0 +1,13 @@
+// variables.scss 예시
+body {
+  margin: 0px; // 기본적으로 body에 margin 8px가 적용되어 있어 0으로 변경
+}
+
+$primary-color: #3498db;
+$font-stack: "Roboto", sans-serif;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

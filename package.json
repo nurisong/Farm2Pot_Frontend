@@ -1,0 +1,29 @@
+{
+  "name": "farm2pot_frontend",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "packages/admin",
+    "packages/user/*"
+  ],
+  "scripts": {
+    "dev:admin": "npm run dev --workspace=admin",
+    "dev:user": "npm run dev --workspace=@user/user",
+    "dev:subscribe": "npm run dev --workspace=@user/subscribe",
+    "build:admin": "npm run build --workspace=admin",
+    "build:user": "npm run build --workspace=@user/user",
+    "build:subscribe": "npm run build --workspace=@user/subscribe"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "sass-embedded": "^1.93.2"
+  },
+  "dependencies": {
+    "react-router-dom": "^7.9.3"
+  }
+}
